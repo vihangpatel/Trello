@@ -1,0 +1,27 @@
+body {
+  margin : 0px;
+}
+
+.top-bar{
+  background: rgba(27,0,255,0.9);
+  height: 40px;
+  color: white;
+  font-family: fantasy;
+  line-height: 60px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+[ondragover] {
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+  border:1px solid red;
+  position: relative;
+  float: left;
+}
+[draggable] {
+  width: inherit;
+  height: 100px;
+  border : 1px solid gray;
+}
