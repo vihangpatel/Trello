@@ -37,6 +37,8 @@ Trello.Components.Factory = {
       var element = document.createElement("div");
       element.innerHTML = response;
       document.getElementById(options.data.context).appendChild(element.firstChild);
+      options.data.id = "draggable-".concat(Trello.cardCount);
+      options.init && options.init();
       Trello.cardCount++;
     });
   },
