@@ -14,7 +14,7 @@ Trello.Components.Category = function (data) {
     return _cardList.slice(0);
   };
   var _attach_event = function () {
-    document.getElementById(_this.data.id).getElementsByTagName("button")[0].addEventListener('click', function (event) {
+    document.getElementById(_this.data.id).getElementsByClassName("add-note-button")[0].addEventListener('click', function (event) {
       _this.addCard({}, _this.data.id);
     });
   }
@@ -24,6 +24,7 @@ Trello.Components.Category = function (data) {
     _this.data.id = data.id;
     _fill_cards();
     _attach_event();
+    document.getElementById(_this.data.id).getElementsByClassName("card-name")[0].innerHTML = _this.data.name;
   };
 
 

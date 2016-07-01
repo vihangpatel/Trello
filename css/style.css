@@ -13,15 +13,57 @@ body {
 }
 
 [ondragover] {
-  width: 200px;
-  height: 400px;
+  width: 20%;
+  background: #cdd2d4;
+  min-height: 200px;
   margin: 20px;
-  border:1px solid red;
+  border: 1px solid gray;
   position: relative;
   float: left;
+  border-radius: 5px;
+  padding-bottom: 60px;
 }
 [draggable] {
-  width: inherit;
-  height: 100px;
-  border : 1px solid gray;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+[draggable] textarea{
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  border: none;
+
+}
+
+.add-note-button {
+  width: 90%;
+  height: 35px;
+  margin: 10px;
+  background: white;
+  border-radius: 5px;
+  line-height: 35px;
+  font-family: sans-serif;
+}
+
+.header-buttons-container{
+  height: inherit;
+  float: right;
+  line-height: 50px;
+}
+
+.card-name {
+  width: 90%;
+  font-size: 23px;
+  font-family: sans-serif;
+  color: blue;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.add-category {
+  font-family: sans-serif;
+  font-size: 20px;
 }

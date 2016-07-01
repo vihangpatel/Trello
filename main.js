@@ -57,7 +57,11 @@ function init() {
   Trello.Components.Factory.createHeader();
   Trello.Components.Factory.createSection();
   var categories = data.boards[0].payload;
-  for(var key in categories){
+  for (var key in categories) {
     new Trello.Components.Category(categories[key]);
   }
+}
+
+function createNewPage() {
+  new Trello.Components.Category({name: 'New list !', cards: []});
 }
