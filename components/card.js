@@ -13,6 +13,6 @@ Trello.Components.Card = function (data, context) {
   }
 
   this.init = function () {
-    document.getElementById(_this.data.id).getElementsByTagName("textarea")[0].value = _this.data.content;
+    document.getElementById(_this.data.id).getElementsByTagName("textarea")[0].value = _this.data.content || '';
   }
 };
